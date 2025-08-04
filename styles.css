@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Doto:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@700&family=JetBrains+Mono&display=swap");
+
+:root {
+  --primary: #d4d4dc;
+  --secondary: #feda6a;
+  --background-color: #1d1e22;
+  --background-color-grey: #393f4d;
+  --surface: #2f323a;
+
+  --font-ui: "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-heading: "Doto", "Poppins", var(--font-ui);
+  --font-code: "JetBrains Mono", ui-monospace, monospace;
+}
+
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+body {
+  background-color: var(--background-color);
+  background-image: radial-gradient(
+    circle at 50% 50%,
+    var(--background-color-grey) 0%,
+    var(--background-color) 100%
+  );
+}
+
+body h1 {
+  overflow: hidden;
+  border-style: solid;
+  padding: 0.5%;
+  color: var(--primary);
+  display: flex;
+  justify-content: center;
+  width: fit-content;
+  margin: 0 auto;
+  font-size: 7rem;
+  padding: 1.2%;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  font-family: var(--font-heading);
+}
+
+nav {
+  position: sticky;
+  display: flex;
+  justify-content: flex-end;
+  padding: 1.2%;
+  padding-bottom: 8%;
+  font-family: var(--font-ui);
+}
+
+nav ul {
+  display: flex;
+  gap: 1rem;
+}
+
+nav li {
+  list-style-type: none;
+}
+
+nav li a {
+  text-decoration: none;
+  color: var(--primary);
+}
+
+nav li a:hover {
+  color: var(--secondary);
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1%;
+}
+
+.socials ul {
+  display: flex;
+  gap: 1rem;
+  font-size: 180%;
+}
+
+.socials li {
+  list-style-type: none;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+footer p {
+  color: var(--primary);
+  font-family: var(--font-ui);
+}
+
+footer a {
+  font-family: var(--font-heading);
+  color: var(--secondary);
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 2%;
+  color: var(--primary);
+  font-family: var(--font-ui);
+  padding-top: 5%;
+  text-align: center;
+}
+
+main section {
+  flex: 1;
+}
+
+main h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-family: var(--font-heading);
+  text-align: center;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2%;
+}
+
+.projects ul {
+  list-style-type: none;
+}
+
+.projects ul li a {
+  text-decoration: none;
+  color: var(--primary);
+  font-family: var(--font-ui);
+}
